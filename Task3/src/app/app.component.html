@@ -1,0 +1,28 @@
+<div id="container">
+    <div id="search">
+        <input type="text" class="search-txt" (keyup)="searchCountries($event) " [(ngModel)]="searchText " />
+        <div *ngIf="countries " class="ctry-list ">
+            <div *ngFor="let country of countries ">
+                <a href="# " (click)="saveSearchText(country) ">
+                    <span [innerHTML]="country.name | translate: searchText "></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="history " *ngIf="searchHistories.length>0">
+        <div class="hstry-table">
+            <div class="hstry-table-row">
+                <div class="hstry-table-col hcol1">Search history</div>
+                <div class="hstry-table-col hcol2">
+                    <a href="#" (click)="removeAllHistory()">Clear Search history</a>
+                </div>
+            </div>
+            <div class="hstry-table-row" *ngFor="let searchHistory of searchHistories">
+                <div class="hstry-table-col ccol1">{{searchHistory.SearchText}}</div>
+                <div class="hstry-table-col ccol2">{{searchHistory.SearchDate | date:'yyy-MM-dd h:mm a'}}
+                    <a class="removeIcon" href="#" (click)="removeHistory(searchHistory)">&#x2715;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

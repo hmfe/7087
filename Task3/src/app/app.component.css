@@ -1,0 +1,87 @@
+#container {
+    width: 40%;
+}
+
+input,
+input:focus {
+    caret-color: #D5D5D5;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.search-txt {
+    color: grey;
+    background-color: #FFFFFF;
+    border: 1.5px solid #D3D3D3;
+    height: 45px;
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    outline: 0;
+}
+
+.ctry-list {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1.5px solid #D3D3D3;
+    max-height: 240px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 1px;
+    width: 100%;
+    overflow: hidden
+}
+
+.ctry-list a {
+    line-height: 30px;
+}
+
+.hstry-table {
+    display: table;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hstry-table-row {
+    display: table-row;
+    line-height: 40px;
+}
+
+.hstry-table-col {
+    display: table-cell;
+    border-bottom: 1.5px solid #D3D3D3;
+    width: 50%;
+}
+
+.hcol1 {
+    font-weight: bolder;
+    font-size: large;
+    text-align: left;
+}
+
+.hcol2 {
+    font-size: small;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.ccol1 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.ccol2 {
+    font-size: smaller;
+    font-weight: normal;
+    color: #D3D3D3;
+    text-align: right;
+}
+
+.removeIcon {
+    padding-left: 20px;
+    color: #D3D3D3;
+}
