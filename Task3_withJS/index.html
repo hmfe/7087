@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autocomplete Search form</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <form>
+        <div id="container">
+            <div id="search">
+                <input type="text" id="searchText" class="search-txt" onkeyup="searchCountries()" />
+                <div class="ctry-list" id="countryList"></div>
+            </div>
+            <div class="hstry-table" id="history">
+                <div class="hstry-table-header-row">
+                    <div class="hstry-table-col hcol1">Search history</div>
+                    <div class="hstry-table-col hcol2">
+                        <a href="#" onclick="removeAllSearchHistory()">Clear Search history</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <script src="script.js" type="text/javascript "></script>
+</body>
+
+</html>
